@@ -1,4 +1,27 @@
-p{
-    color: red;
-    font-size: 50px;
+*{
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1260px;
+}
+
+.wrapper{
+    display: flex;
+}
+
+img {
+    
+    
+}
+body {
+    background-color: #404040;
+}
+
+.card1{
+    
+    
+}
+
+.card2{
+
+    
 }
