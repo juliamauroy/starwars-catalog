@@ -1,29 +1,26 @@
-*{
+ *{
     padding: 0;
     box-sizing: border-box;
     max-width: 1265px;
 }
 
-.wrapper{
+ .wrapper{
     display: flex;
-}
+ }
 
-img {
-    
-    
-}
-body {
+
+ body {
     background-color: #404040;
-}
-.card{
+ }
+ .card{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     border: 10px;
-}
+ }
 
-.card1{
+ .card1{
     width: 256px;
     height: 308px;
     background-color: white;
@@ -37,9 +34,9 @@ body {
     margin-bottom: 4em;
     
     
-}
+ }
 
-.card2{
+ .card2{
 
     width: 256px;
     height: 308px;
@@ -53,4 +50,4 @@ body {
     position: relative;
     margin-bottom: 4em;
     
-}
+ }
