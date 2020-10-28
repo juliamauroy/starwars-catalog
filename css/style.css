@@ -4,10 +4,24 @@
     max-width: 1260px;
 }
 
+.wrapper{
+    display: flex;
+}
+
 img {
     
     
 }
 body {
     background-color: #404040;
+}
+
+.card1{
+    
+    
+}
+
+.card2{
+
+    
 }
