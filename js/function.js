@@ -1,5 +1,6 @@
 
-let character=[{
+
+let data=[{
 	"count": 82,
 	"next": "http://swapi.dev/api/people/?page=2",
 	"previous": null,
