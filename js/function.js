@@ -9,7 +9,7 @@ fetch("https://swapi.dev/api/people/")
 
   for(p of people) {
     let listItem = document.createElement('li'); 
-    listItem.innerHTML = '<p>' + p.name + '</p>'; 
+    listItem.innerHTML = '<li>' + p.name + '</li>'; 
     starWarsPeopleList.appendChild(listItem);
   }
 
