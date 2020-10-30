@@ -1,4 +1,4 @@
-let starWarsPeopleList = document.querySelector('nav-list six-quarter');
+ let starWarsPeopleList = document.querySelector('.nav-list.six-quarter');
 
 fetch("https://swapi.dev/api/people/") 
 .then(function(response) {
@@ -8,7 +8,7 @@ fetch("https://swapi.dev/api/people/")
   let people = json.results; 
 
   for(p of people) {
-    let listItem = document.querySelector('nav-item'); 
+    let listItem = document.createElement('li'); 
     listItem.innerHTML = '<p>' + p.name + '</p>'; 
     starWarsPeopleList.appendChild(listItem);
   }
