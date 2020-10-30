@@ -21,6 +21,9 @@ async function listCharacters(){
 	return data.results
 }
 
+function renderListItems(character)
+document.querySelectors("nav-item")
+
 async function renderCharacterList(){
 	const characters = await listCharacters()
 
