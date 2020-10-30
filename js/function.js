@@ -22,7 +22,9 @@ async function listCharacters(){
 }
 
 function renderListItems(character)
-document.querySelectors("nav-item")
+let listItem = document.querySelectors(".box1")
+listItem.innerHtml = 
+document.querySelector(".mass").innerHTML = user.mass
 
 async function renderCharacterList(){
 	const characters = await listCharacters()
