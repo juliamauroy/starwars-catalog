@@ -1,6 +1,6 @@
 let starWarsPeopleList = document.querySelector('nav-list six-quarter');
 
-fetch('https://swapi.dev/api/people/%27) 
+fetch('https://swapi.dev/api/people/) 
 .then(function(response) {
   return response.json(); 
 })
