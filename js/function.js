@@ -1,17 +1,7 @@
+let starWarsPeopleList = document.querySelector('nav-list six-quarter');
 
-// var starWarsPeopleList = document.querySelector("nav-list six-quarter");
-
-// fetch('https://swapi.dev/api/people/') 
-// .then(function(response) {
-
-// 	 console.log(response)
-// })
-
-
-var starWarsPeopleList = document.querySelector('nav-list six-quarter');
-
-fetch('https://swapi.dev/api/people/') 
-.then(function(response) {   
+fetch('https://swapi.dev/api/people/%27) 
+.then(function(response) {
   return response.json(); 
 })
 .then(function(json) {
@@ -20,7 +10,9 @@ fetch('https://swapi.dev/api/people/')
   for(p of people) {
     let listItem = document.querySelector('nav-item'); 
     listItem.innerHTML = '<p>' + p.name + '</p>'; 
-    starWarsPeopleList.appendChild(listItem);  
+    starWarsPeopleList.appendChild(listItem);
   }
 
 });
+
+hej hej :)
