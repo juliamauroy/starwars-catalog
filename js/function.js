@@ -45,14 +45,15 @@ async function main() {
       const homeWorld = await getCharacterInfo(character.homeworld);
       addCharacterData(character);
     }
-    // buttonright.addEventListener("click",function(){
-    //   run()
-    // })
-    // .buttonleft.addEventListener("click",function(){
-    //   run()
-    // })
+    
   
     setCharacters();
   }
+  // buttonright.addEventListener("click",function(){
+  //     run()
+  //   })
+  //   .buttonleft.addEventListener("click",function(){
+  //     run()
+  //   })
   
   main();
