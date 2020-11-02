@@ -30,10 +30,13 @@ async function main() {
     function addCharacterData(obj) {
       const characterList = document.querySelector(".character-details__list");
       characterList.innerHTML = `
-          <li>Name: ${obj.name}</li>
           <li>Height: ${obj.height}</li>
+          <li>Birth Year: ${obj.birth_year}</li>
           <li>Mass: ${obj.mass}</li>
           <li>Skin Color: ${obj.skin_color}</li>
+          <li>Hair Color: ${obj.hair_color}</li>
+          <li>Eye Color: ${obj.eye_color}</li>
+          <li>Gender: ${obj.gender}</li>
           `;
     }
   
@@ -42,6 +45,12 @@ async function main() {
       const homeWorld = await getCharacterInfo(character.homeworld);
       addCharacterData(character);
     }
+    buttonright.addEventListener("click",function(){
+      run()
+    })
+    .buttonleft.addEventListener("click",function(){
+      run()
+    })
   
     setCharacters();
   }
