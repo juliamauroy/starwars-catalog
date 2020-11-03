@@ -26,6 +26,18 @@ async function main() {
         starWarsPeopleList.append(li);
       }
     }
+    function planetInfo(obj){
+      const planetList=document.querySelector(".planet-details__list");
+       planetList.innerHTML=`
+          <li>Rotation Period: ${obj.rotation_period}</li>
+          <li>Orbital period: ${obj.orbital_period}</li>
+          <li>Diameter: ${obj.diameter}</li>
+          <li>Climate: ${obj.climate}</li>
+          <li>Gravity: ${obj.gravity}</li>
+          <li>Terrain: ${obj.terrain}</li>
+          `;
+    }
+
   
     function addCharacterData(obj) {
       const characterList = document.querySelector(".character-details__list");
@@ -44,16 +56,38 @@ async function main() {
       const character = await getCharacterInfo(e.target.dataset.url);
       const homeWorld = await getCharacterInfo(character.homeworld);
       addCharacterData(character);
+      planetInfo(homeWorld);
     }
     
   
     setCharacters();
   }
-  // buttonright.addEventListener("click",function(){
-  //     run()
-  //   })
-  //   .buttonleft.addEventListener("click",function(){
-  //     run()
-  //   })
+  function initEvent(){
+    const buttonRight=document.querySelector(".buttonright")
+    const buttonleft=document.querySelector(".buttonleft")
+     buttonRight.addEventListener("click",function(){
+       run()
+     })
+     buttonLeft.addEventListener("click",function(){
+       run()
+     })
+     
+   }
+
+  function next(){
+    currentPage++
+    setCharacters()
+  }
+  function previous(){
+    if(currentPage > 0)
+    currentPage--
+    setCharacters()
+  }
+
+  function run(){
+    initEvent();
+    setCharacters();
+  }
+ 
   
   main();
