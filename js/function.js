@@ -4,7 +4,7 @@ async function main() {
     // const navList = document.querySelector('.nav-list');
     let starWarsPeopleList = document.querySelector(".nav-list.six-quarter");
     let currentPage = 1;
-    let maxPage=9
+    let maxPage=8
   
     async function getPageData() {
       const response = await fetch(
