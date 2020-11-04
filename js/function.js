@@ -5,11 +5,16 @@ async function main() {
     let starWarsPeopleList = document.querySelector(".nav-list.six-quarter");
     let currentPage = 1;
     let maxPage=8
-  
+
+    
     async function getPageData() {
+      
+    
       const response = await fetch(
         `https://swapi.dev/api/people/?page=${currentPage}`
       );
+
+      
       return await response.json();
     }
     async function getCharacterInfo(url) {
