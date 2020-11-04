@@ -1,4 +1,5 @@
 
+let spinner = document.querySelector(".loader")
 
 async function main() {
     // const navList = document.querySelector('.nav-list');
@@ -23,6 +24,7 @@ async function main() {
     }
   
     async function setCharacters() {
+      spinner.classList.remove('hidden')
       const characters = await getPageData();
       starWarsPeopleList.innerHTML=""
       for (character of characters.results) {
@@ -32,6 +34,7 @@ async function main() {
         li.addEventListener("click", addCharacterInfo);
         starWarsPeopleList.append(li);
       }
+      spinner.classList.add('hidden')
     }
     function planetInfo(obj){
       const planetList=document.querySelector(".planet-details__list");
