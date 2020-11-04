@@ -24,7 +24,9 @@ async function main() {
     }
   
     async function setCharacters() {
+
       spinner.classList.remove('hidden')
+      
       const characters = await getPageData();
       starWarsPeopleList.innerHTML=""
       for (character of characters.results) {

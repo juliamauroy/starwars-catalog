@@ -188,8 +188,9 @@
    position: absolute;;
    width: 100%;
    height: 2px;
-   justify-content: center; 
-    
+   justify-content: center;
+   padding: 100px
+  
   }
 
   .loader,
